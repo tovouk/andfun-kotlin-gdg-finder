@@ -164,7 +164,7 @@
                 android:contentDescription="@string/submit_button_description"
                 android:onClick="@{() -> viewModel.onSubmitApplication()}"
                 android:text="@string/submit"
-                android:accessibilityLiveRegion="true"
+                android:accessibilityLiveRegion="1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/contentGroup" />
