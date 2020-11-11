@@ -42,6 +42,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextName"
+                    android:contentDescription="@string/stage_image_description"
                     android:scaleType="centerCrop"/>
 
             <EditText
@@ -55,6 +56,7 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
+                    android:hint="@string/your_name_label"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextEmail"
                     android:singleLine="true"/>
 
@@ -69,6 +71,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
+                    android:hint="@string/email_label"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextCity"
                     android:singleLine="true"/>
             <EditText
@@ -81,6 +84,7 @@
                     android:layout_marginStart="32dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="32dp"
+                    android:hint="@string/city_label"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextCountry"
                     android:layout_marginBottom="4dp"
                     android:singleLine="true"/>
@@ -94,6 +98,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
+                    android:hint="@string/country_label"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextRegion"
                     android:layout_marginTop="4dp"
                     android:singleLine="true"/>
@@ -108,6 +113,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
+                    android:hint="@string/region_label"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextWhy"
                     android:singleLine="true"/>
 
@@ -132,6 +138,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_normal"
                     android:layout_marginStart="32dp"
+                    android:contentDescription="@string/motivation"
                     app:layout_constraintTop_toBottomOf="@+id/EditTextRegion"
                     android:layout_marginBottom="1dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextWhy"
@@ -143,6 +150,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
                     android:ems="10"
+                    android:hint="@string/enter_motivation"
                     app:layout_constraintTop_toBottomOf="@+id/EditTextRegion"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -157,6 +165,7 @@
             <Button
                     android:id="@+id/button"
                     android:text="Ok"
+                    android:contentDescription="@string/submit_button_description"
                     android:layout_width="40dp"
                     android:layout_height="24dp"
                     app:layout_constraintBottom_toBottomOf="parent"
